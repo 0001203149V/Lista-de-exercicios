@@ -1,0 +1,38 @@
+programa
+{
+	inclua biblioteca Matematica 
+	funcao real calcularSalarioLiquido(real salarioBruto)
+	{
+		real desconto 
+		real aliquota 
+		real salario_liquido
+		se (salarioBruto < 2000.0)
+		{
+			aliquota = 0.10
+		}
+		senao
+		{
+			aliquota = 0.20
+		}
+		desconto = salarioBruto * aliquota
+		salario_liquido = salarioBruto - desconto
+		escreva("\n")
+		escreva("Salário Bruto: R$ ", salarioBruto, "\n")
+		escreva("Alíquota Aplicada: ", aliquota * 100.0, "%\n")
+		escreva("Valor do Desconto: R$ ", desconto, "\n")
+		escreva("-----------------------------------\n")
+		retorne salario_liquido
+	}
+
+	funcao inicio()
+	{
+		real salario_bruto_digitado 
+		real salario_liquido_final
+
+		escreva("--- Cálculo do Salário Líquido ---\n")
+		escreva("Digite o valor do Salário Bruto: R$ ")
+		leia(salario_bruto_digitado)
+		salario_liquido_final = calcularSalarioLiquido(salario_bruto_digitado)
+		escreva("Salário Líquido Final: R$ ", salario_liquido_final, "\n")
+	}
+}
