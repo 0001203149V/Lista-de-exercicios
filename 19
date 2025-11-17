@@ -1,0 +1,37 @@
+programa
+{
+funcao inicio() {
+inteiro voto = -1
+inteiro c1 = 0, c2 = 0, c3 = 0
+
+escreva("=== Eleição ===\n")
+escreva("Candidato 1\nCandidato 2\nCandidato 3\nDigite 0 para encerrar.\n")
+
+enquanto(voto != 0)
+{
+escreva("\nSeu voto: ")
+leia(voto)
+
+se(voto == 1)
+{
+c1 = c1 + 1
+}
+senao se(voto == 2)
+{
+c2 = c2 + 1
+}
+senao se(voto == 3)
+{
+c3 = c3 + 1
+}
+senao se(voto != 0)
+{
+escreva("Voto inválido! Tente novamente.\n")
+}
+}
+escreva("\n=== Resultado Final ===\n")
+escreva("Candidato 1: ", c1, " votos\n")
+escreva("Candidato 2: ", c2, " votos\n")
+escreva("Candidato 3: ", c3, " votos\n")
+}
+}
