@@ -1,0 +1,32 @@
+programa{
+
+	funcao inicio(){
+		inteiro numero_digitado
+		inteiro contador_divisores = 0
+		inteiro i 
+		escreva("Digite um número inteiro positivo: ")
+		leia(numero_digitado)
+		se (numero_digitado > 0)
+		{
+			para (i = 1; i <= numero_digitado; i++)
+			{
+				se (numero_digitado % i == 0)
+				{
+					contador_divisores++
+				}
+			}
+			se (contador_divisores == 2)
+			{
+				escreva("\nO número ", numero_digitado, " é primo!\n")
+			}
+			senao
+			{
+				escreva("\nO número ", numero_digitado, " não é primo. Possui ", contador_divisores, " divisores.\n")
+			}
+		}
+		senao
+		{
+			escreva("\nNúmero inválido. Por favor, digite um número inteiro positivo.\n")
+		}
+	}
+}
