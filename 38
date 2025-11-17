@@ -1,0 +1,43 @@
+programa
+{
+	funcao inteiro calcularFatorial(inteiro n)
+	{
+		inteiro resultado_fatorial = 1
+		inteiro i
+		se (n < 0)
+		{
+			escreva("Erro: Fatorial não definido para números negativos.\n")
+			retorne 0 
+		}
+		se (n == 0)
+		{
+			retorne 1
+		}
+		
+		para (i = 1; i <= n; i++)
+		{
+			resultado_fatorial = resultado_fatorial * i
+		}
+		
+		retorne resultado_fatorial
+	}
+
+	funcao inicio()
+	{
+		inteiro n_digitado 
+		inteiro fatorial_final 
+		
+		escreva("--- Cálculo do Fatorial ---\n")
+		escreva("Digite um número inteiro não negativo (n): ")
+		leia(n_digitado)
+		fatorial_final = calcularFatorial(n_digitado)
+		se (n_digitado >= 0)
+		{
+			escreva("\nO fatorial de ", n_digitado, "! é: ", fatorial_final, "\n")
+		}
+		senao
+		{
+			escreva("\nPor favor, execute o programa novamente e digite um valor não negativo.\n")
+		}
+	}
+}
