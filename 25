@@ -1,0 +1,15 @@
+programa
+{
+    inclua biblioteca Matematica --> mat
+    funcao inicio(){
+    real C, i, t, M
+    escreva("Digite o Capital (C): ")
+    leia(C)
+    escreva("Digite a Taxa (i), ex: 0.05: ")
+    leia(i)
+    escreva("Digite o Tempo (t): ")
+    leia(t)
+    M = C * mat.potencia( (1.0 + i), t )
+    escreva("Montante (M): ", M)
+ }
+}
