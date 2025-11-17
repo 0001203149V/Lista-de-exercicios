@@ -1,0 +1,20 @@
+programa
+{
+	funcao inicio()
+	{
+		real nota 
+
+		escreva("--- Validação de Nota (0 a 10) ---\n")
+		escreva("Digite uma nota (0 a 10): ")
+		leia(nota)
+		enquanto (nota < 0.0 ou nota > 10.0)
+		{
+			escreva("\n") 
+			escreva("ERRO: Nota inválida. O valor deve estar entre 0 e 10.\n")
+			escreva("Digite uma nota válida (0 a 10): ")
+			leia(nota)
+		}
+		escreva("\n")
+		escreva("Nota registrada com sucesso! Valor: ", nota)
+	}
+}
