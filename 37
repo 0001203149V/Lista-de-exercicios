@@ -1,0 +1,28 @@
+programa
+{
+	funcao inteiro getMaior(inteiro a, inteiro b)
+	{
+		se (a > b)
+		{
+			retorne a
+		}
+		senao
+		{
+			retorne b
+		}
+	}
+
+	funcao inicio()
+	{
+		inteiro num_x = 42
+		inteiro num_y = 101
+		inteiro maior_valor
+		
+		escreva("--- Teste da Função getMaior ---\n")
+		maior_valor = getMaior(num_x, num_y)
+		escreva("Entre ", num_x, " e ", num_y, ", o maior é: ", maior_valor, "\n")
+		maior_valor = getMaior(num_y, num_x)
+		escreva("Entre ", num_y, " e ", num_x, ", o maior é: ", maior_valor, "\n")
+		escreva("Entre 50 e 50, o maior é: ", getMaior(50, 50), "\n")
+	}
+}
