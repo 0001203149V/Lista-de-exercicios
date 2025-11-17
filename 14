@@ -1,0 +1,19 @@
+programa
+{
+	funcao inicio()
+	{
+		cadeia senha_digitada = "" 
+		escreva("--- Sistema de Login ---\n")
+		enquanto (senha_digitada != "1234")
+		{
+			escreva("Digite a senha: ")
+			leia(senha_digitada)
+			se (senha_digitada != "1234") 
+			{
+				escreva("Senha incorreta. Tente novamente.\n")
+			}
+		}
+		escreva("\n")
+		escreva("Acesso Liberado! Bem-vindo(a).")
+	}
+}
