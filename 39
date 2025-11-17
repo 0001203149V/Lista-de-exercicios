@@ -1,0 +1,37 @@
+programa
+{
+	inclua biblioteca Matematica 
+
+	funcao real calcularMontante(real C, real i, real t)
+	{
+		real base_potencia = 1.0 + i 
+		real fator_potencia
+		real montante_final 
+		fator_potencia = Matematica.potencia(base_potencia, t)
+		montante_final = C * fator_potencia
+		
+		retorne montante_final
+	}
+
+	funcao inicio()
+	{
+		real capital, taxa, tempo, montante
+		
+		escreva("--- Cálculo do Montante (Juros Compostos) ---\n")
+		escreva("Digite o Capital inicial (C): R$ ")
+		leia(capital)
+
+		escreva("Digite a Taxa de Juros (i, em decimal, ex: 0.05): ")
+		leia(taxa)
+
+		escreva("Digite o Tempo de aplicação (t): ")
+		leia(tempo)
+		montante = calcularMontante(capital, taxa, tempo)
+		escreva("\n--- Resultado da Aplicação ---")
+		escreva("\nCapital (C): R$ ", capital)
+		escreva("\nTaxa (i): ", taxa * 100.0, "% ao perнodo")
+		escreva("\nTempo (t): ", tempo, " perнodos")
+		escreva("\n")
+		escreva("O Montante Final (M) é: R$ ", montante, "\n")
+	}
+}
