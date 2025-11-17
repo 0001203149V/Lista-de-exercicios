@@ -1,0 +1,20 @@
+programa
+{
+    inclua biblioteca Matematica --> mat
+
+    funcao inicio()
+    {
+        real A, B, hipotenusa
+
+        escreva("Digite o valor do cateto A: ")
+        leia(A)
+
+        escreva("Digite o valor do cateto B: ")
+        leia(B)
+
+        // hipotenusa = raiz(A² + B²)
+        hipotenusa = mat.raiz( mat.potencia(A, 2) + mat.potencia(B, 2) )
+
+        escreva("A hipotenusa é: ", hipotenusa)
+    }
+}
