@@ -1,0 +1,42 @@
+programa
+{
+	funcao logico ehPar(inteiro n)
+	{
+		retorne (n % 2 == 0)
+	}
+
+	funcao inicio()
+	{
+		inteiro num_par = 10
+		inteiro num_impar = 7
+		
+		escreva("--- Teste de Paridade ---\n")
+		escreva(num_par, ": ")
+		se (ehPar(num_par))
+		{
+			escreva("É Par\n")
+		}
+		senao
+		{
+			escreva("É Ímpar\n")
+		}
+		escreva(num_impar, ": ")
+		se (ehPar(num_impar))
+		{
+			escreva("É Par\n")
+		}
+		senao
+		{
+			escreva("É Ímpar\n")
+		}
+		escreva("0: ")
+		se (ehPar(0))
+		{
+			escreva("É Par\n")
+		}
+		senao
+		{
+			escreva("É Ímpar\n")
+		}
+	}
+}
