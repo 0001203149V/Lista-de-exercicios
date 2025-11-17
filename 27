@@ -1,0 +1,11 @@
+programa {
+ funcao vazio mostrarLinha() {
+ escreva("====================")
+ }
+
+  funcao inicio() {
+  mostrarLinha()
+  mostrarLinha()
+  mostrarLinha()
+ }
+}
