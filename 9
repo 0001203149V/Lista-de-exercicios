@@ -1,0 +1,25 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro idade
+		cadeia comorbidade_resposta
+		escreva("--- Triagem Hospitalar ---\n")
+		escreva("Digite a idade do paciente: ")
+		leia(idade)
+		
+		escreva("O paciente tem comorbidade? (sim/nao): ")
+		leia(comorbidade_resposta)
+		
+		escreva("\n") 
+
+		se (idade >= 65 ou comorbidade_resposta == "sim")
+		{
+			escreva("Situação: ATENDIMENTO PRIORITÁRIO!")
+		}
+		senao 
+		{
+			escreva("Situação: Atendimento Normal.")
+		}
+	}
+}
