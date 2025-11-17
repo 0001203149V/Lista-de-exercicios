@@ -1,0 +1,31 @@
+programa
+{
+	funcao inicio()
+	{
+		real nota1, nota2, media
+
+		escreva("--- Cálculo da Média Escolar Completa ---\n")
+		escreva("Digite a primeira nota (N1): ")
+		leia(nota1)
+		
+		escreva("Digite a segunda nota (N2): ")
+		leia(nota2)
+		media = (nota1 + nota2) / 2.0
+		
+		escreva("\n") 
+		escreva("Sua média final é: ", media, "\n")
+
+		se (media >= 7.0)
+		{
+			escreva("Parabéns! Situação: Aprovado!")
+		}
+		senao se (media >= 5.0) 
+		{
+			escreva("Atenção! Situação: Recuperação (Exame Final)")
+		}
+		senao 
+		{
+			escreva("Infelizmente, Situação: Reprovado")
+		}
+	}
+}
