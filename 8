@@ -1,0 +1,24 @@
+programa
+{
+	funcao inicio()
+	{
+		cadeia login_digitado, senha_digitada
+
+		escreva("--- Login no sistema ---\n")
+		escreva("Digite seu login: ")
+		leia(login_digitado)
+		
+		escreva("Digite sua senha: ")
+		leia(senha_digitada)
+		
+		escreva("\n")
+		se (login_digitado == "admin" e senha_digitada == "senai123")
+		{
+			escreva("Acesso permitido! Bem-vindo(a), admin.")
+		}
+		senao 
+		{
+			escreva("Acesso negado! Login ou senha inválidos.")
+		}
+	}
+}
