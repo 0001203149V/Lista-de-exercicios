@@ -1,0 +1,36 @@
+programa
+{
+	funcao logico ehMaiorDeIdade(inteiro idade)
+	{
+		retorne idade >= 18
+	}
+
+	funcao inicio()
+	{
+		inteiro idade_teste1 = 25
+		inteiro idade_teste2 = 17 
+		logico resultado_teste
+
+		escreva("--- Teste de Maioridade ---\n")
+		resultado_teste = ehMaiorDeIdade(idade_teste1)
+		
+		escreva("Idade de ", idade_teste1, " anos. ")
+		se (resultado_teste)
+		{
+			escreva("-> É maior de idade.\n")
+		}
+		senao
+		{
+			escreva("-> Não é maior de idade.\n")
+		}
+		escreva("Idade de ", idade_teste2, " anos. ")
+		se (ehMaiorDeIdade(idade_teste2))
+		{
+			escreva("-> É maior de idade.\n")
+		}
+		senao
+		{
+			escreva("-> Não é maior de idade.\n")
+		}
+	}
+}
