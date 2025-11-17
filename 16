@@ -1,0 +1,21 @@
+programa
+{
+  funcao inicio() {
+  inteiro N, i
+  real nota, soma = 0, media
+
+  escreva("Quantos alunos são? ")
+  leia(N)
+
+  para(i = 1; i <= N; i++)
+ {
+  escreva("Digite a nota do aluno ", i, ": ")
+  leia(nota)
+  soma = soma + nota
+ }
+
+  media = soma / N
+
+ escreva("\nA média da turma é: ", media)
+    }
+}
