@@ -1,0 +1,18 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro n, soma_total = 0
+		inteiro contador 
+		escreva("--- Somador de 5 Números ---\n")
+		
+		para (contador = 1; contador <= 5; contador++)
+		{
+			escreva("Digite o ", contador, "º número: ")
+			leia(n)
+			soma_total = soma_total + n 
+		}
+		escreva("\n")
+		escreva("A soma total dos 5 números é: ", soma_total)
+	}
+}
