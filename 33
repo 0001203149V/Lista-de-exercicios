@@ -1,0 +1,22 @@
+programa{
+	funcao inteiro somar(inteiro a, inteiro b)
+	{
+		inteiro resultado 
+		
+		resultado = a + b
+
+		retorne resultado
+	}
+
+	funcao inicio()
+	{
+		inteiro num1 = 15 
+		inteiro num2 = 7 
+		inteiro total
+
+		escreva("--- Teste da Função Somar ---\n")
+		total = somar(num1, num2)
+		escreva("A soma de ", num1, " e ", num2, " é igual a: ", total, "\n")
+		escreva("\nOutra soma: 10 + 3 = ", somar(10, 3), "\n")
+	}
+}
